@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <div
       css={css`
-        font-family: 'GangwonEduPowerExtraBoldA';
+        font-family: 'Gangwon';
         font-size: 50px;
       `}
     >
