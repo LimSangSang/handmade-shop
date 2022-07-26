@@ -30,7 +30,7 @@ const containerCss = {
     })
 }
 
-const Category: React.FC = () => {
+const Category = () => {
     
   return (
     <div css={containerCss.title}>
