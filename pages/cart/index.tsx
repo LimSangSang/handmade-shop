@@ -15,7 +15,7 @@ const Cart = (props: Props) => {
         <Category />
         <div>
           <CartTable>
-              {dummy_cart.map(item => <CartTable.Item info={item.info} price={item.price} count={item.count} delivery={item.delivery} />)}      
+              {dummy_cart.map(item => <CartTable.Item key={item.info.id} info={item.info} price={item.price} count={item.count} delivery={item.delivery} />)}      
           </CartTable>
           <CartTable.Total>
             <CartTable.TotalItem totalCart={14000} totalDelivery={3000} />

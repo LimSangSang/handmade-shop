@@ -48,7 +48,8 @@ interface ItemProps {
   info: InfoProps,
   count: number,
   price: number,
-  delivery: string
+  delivery: string,
+  key: number
 }
 
 interface InfoProps {
@@ -94,10 +95,10 @@ CartTable.Info = (info :InfoProps) => {
   )
 }
 
-const CartItem = ({info, count, price, delivery}: ItemProps) => {
+const CartItem = ({key, info, count, price, delivery}: ItemProps) => {
   const [counter, setCounter] = useState(count)
   return (  
-    <tr key={info.id} css={itemCss.row}>
+    <tr key={key} css={itemCss.row}>
       <td> 
         <div css={itemCss.infoItem}>
           <CartTable.Info id={info.id} img={info.img} brand={info.brand} price={info.price} name={info.name} />
