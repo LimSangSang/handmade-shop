@@ -56,4 +56,4 @@ const LinkButton = ({value, background, color, width, height, href}: ItemProps) 
 BuyBtnContainer.Button = Button
 BuyBtnContainer.LinkButton = LinkButton
 
-export default BuyBtnContainer
+export default BuyBtnContainer 
