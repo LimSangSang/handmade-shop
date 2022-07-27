@@ -97,7 +97,7 @@ CartTable.Info = (info :InfoProps) => {
 const CartItem = ({info, count, price, delivery}: ItemProps) => {
   const [counter, setCounter] = useState(count)
   return (  
-    <tr css={itemCss.row}>
+    <tr key={info.id} css={itemCss.row}>
       <td> 
         <div css={itemCss.infoItem}>
           <CartTable.Info id={info.id} img={info.img} brand={info.brand} price={info.price} name={info.name} />
