@@ -22,7 +22,7 @@ interface props {
 const ListItem: React.FC<props> = ({img, brand, name, price, id}) => {    
     return (
         <Link href={`/product/${encodeURIComponent(id)}`} passHref>
-            <div css={bodyCss.body}>
+            <a css={bodyCss.body}>
                 <Image 
                     src={img}
                     width={500}
@@ -34,7 +34,7 @@ const ListItem: React.FC<props> = ({img, brand, name, price, id}) => {
                     <div>{name}</div>
                     <div>{price}</div>
                 </div>
-            </div>
+            </a>
         </Link>
     )
 }

@@ -33,9 +33,9 @@ const containerCss = {
 const Category = () => {
     
   return (
-    <div css={containerCss.title}>
+    <nav css={containerCss.title}>
         {categoryList.map(x=> <CategoryItem key={x.category} name={x.name} category={x.category} />)}
-    </div>
+    </nav>
   )
 }
 export default Category
