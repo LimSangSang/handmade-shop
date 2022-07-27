@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     <div>
       {/* header */}
       <Header />
-      <div css={bodyCss.body}>
+      <div className='flexRow'>
         <Category />
         <List />
       </div>

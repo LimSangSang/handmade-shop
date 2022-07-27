@@ -49,7 +49,7 @@ const Product = () => {
       <div css={css`display:flex; flex-direction:column; align-items:center; justify-content:center; margin-right:10%; margin-left: 10%;`}>
         <div css={itemCss.info}>
           <div css={css`width: 50%;`}>
-            <Image src={dummy_item.thumbnail} width={500} height={500} layout='responsive'/>
+            <Image src={dummy_item.thumbnail} width={500} height={500} layout='responsive' />
           </div>
           <div css={css`width: 50%; margin-left:50px;`}>
             <p css={itemCss.brand}>{dummy_item.name}</p>
@@ -99,8 +99,8 @@ const Product = () => {
               <ProductCounter counter={counter} setCounter={setCounter} />
             </div>
             <BuyBtnContainer>
-              <BuyBtnContainer.Item value='주문하기' background='black' color='white' width='50%' />
-              <BuyBtnContainer.Item value='장바구니' background='#ebebeb' color='black' width='50%' />
+              <BuyBtnContainer.LinkButton value='주문하기' background='black' color='white' width='50%' height='50px' href='/cart' />
+              <BuyBtnContainer.LinkButton value='장바구니' background='#ebebeb' color='black' width='50%' height='50px' href='/cart'/>
             </BuyBtnContainer>
           </div>
           

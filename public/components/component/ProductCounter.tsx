@@ -26,7 +26,7 @@ const itemCss = {
 
 const ProductCounter = ({counter, setCounter}: Props) => {
   return (
-    <div className='flexRow' css={itemCss.container}>
+    <div className='flexRow'>
         <div css={itemCss.button}>-</div>
         <div css={itemCss.button}>{counter}</div>
         <div css={itemCss.button}>+</div>

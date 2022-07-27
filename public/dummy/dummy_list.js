@@ -46,3 +46,30 @@ export const dummy_item = {
     details: 'https://img.29cm.co.kr/next-product/2020/02/25/b77819fc025c4d20ac14a76047697caa_20200225091522.jpg?width=1000'
 
 }
+
+export const dummy_cart = [
+    {
+        info : {
+            id: 4,
+            img: 'https://img.29cm.co.kr/next-product/2021/09/01/1bfee05c7bf94d559e6b4f7ce4db1060_20210901110330.jpg?width=500',
+            brand: '겟미블링',
+            name: '[아이유,이솜,채수빈,한예리 착용]One Clip',
+            price: 29000
+        },
+        count: 1,
+        price: 24000,
+        delivery: '무료'
+    },
+    {
+        info : {
+            id: 5,
+            img: 'https://img.29cm.co.kr/next-product/2021/02/22/e4fb54acea6c4c0f90b8269b37cee92f_20210222230514.jpg?width=500',
+            brand: '바이위켄드',
+            name: 'silver925 vintage heart necklace',
+            price: 31300,
+        },
+        count: 1,
+        price: 24000,
+        delivery: '3000'
+    }
+]
