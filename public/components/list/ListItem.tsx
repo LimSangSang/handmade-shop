@@ -9,6 +9,7 @@ const bodyCss = {
         display: 'flex',
         flexDirection:'column',
         width: '25%',
+        cursor: 'pointer'
     })
   }
 
@@ -21,7 +22,7 @@ interface props {
 }  
 const ListItem: React.FC<props> = ({img, brand, name, price, id}) => {    
     return (
-        <Link href={`/product/${encodeURIComponent(id)}`} passHref>
+        <Link href={`/product/${encodeURIComponent(id)}`}>
             <a css={bodyCss.body}>
                 <Image 
                     src={img}

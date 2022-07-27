@@ -45,10 +45,11 @@ const LinkButton = ({value, background, color, width, height, href}: ItemProps) 
           borderColor: 'transparent',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          cursor: 'pointer'
         })
     }
-    return <Link href={href? href:''}>
+    return <Link href={href? href:''} passHref>
         <a css={itemCss.button}>{value}</a>
     </Link>
 }
